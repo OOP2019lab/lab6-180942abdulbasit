@@ -17,10 +17,16 @@ int main()
 	arr1[2].addQuizScore(7);
 	for(int i=0; i<3;i++)
 		arr1[i].print();
-/*
+
 	student **arr2=new student*[4];
-	int size=4;
-	*/
+	arr2[0]=new student (3,2);
+	arr2[1]=new student (3,3);
+	arr2[2]=new student (4,2.33);
+	arr2[2]=new student (4,1);
+
+
+
+	
 	printStudentArray(arr1,size1); //prints the array of non dynamic students
 
 	return 0;
