@@ -109,3 +109,39 @@ void printStudentArray(student *arr,int size)
 	for (int i=0; i<size;i++)
 		arr[i].print();
 }
+void printStudentArray(student **arr,int size)
+{
+	for (int i=0; i<size;i++)
+		arr[i]->print();
+}
+/*student** GpaArray(student **arr, int size)
+{
+	int counter=0;
+	for (int i=0; i<size; i++)
+	{
+		if (arr[i]->GPA>=2.0)
+			counter++
+	}
+	student **arr1=new student*[counter];
+	for(int i=0; i<counter; i++)
+	for (int j=0; j<size;j++)
+		if(arr[j]->GPA>=2)
+			arr1[i]=new student(arr[j]);
+	return arr1;
+}
+student* GpaArray(student *arr, int size)
+{
+	int counter=0;
+	for (int i=0; i<size; i++)
+	{
+		if (arr[i].GPA>=2.0)
+			counter++
+	}
+	student *arr1=new student[counter];
+	for(int i=0; i<counter; i++)
+	for (int j=0; j<size;j++)
+		if(arr[j].GPA>=2)
+			arr1[i]=new student(arr[j]);
+	return arr1;
+}
+*/
